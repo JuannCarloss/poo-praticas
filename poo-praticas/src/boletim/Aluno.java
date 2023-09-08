@@ -13,7 +13,7 @@ public class Aluno {
         if (media >= 7){
             return "APROVADO";
         }else {
-            return "REPROVADO!!! Quantidade necessária para aprovação: " + (10 - media);
+            return "REPROVADO!!! Quantidade necessária para aprovação: " + (7 - media);
         }
     }
 }
