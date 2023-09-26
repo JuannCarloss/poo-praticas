@@ -3,9 +3,9 @@ package construtores;
 import store.Product;
 
 public class Product2 {
-    public String nome;
-    public double preco;
-    public int qtd;
+    private String nome;
+    private double preco;
+    private int qtd;
 
 
     public Product2(String nome, double preco, int qtd) {
@@ -24,5 +24,25 @@ public class Product2 {
 
     public void removerProduto(int qtd) {
         this.qtd -= qtd;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getQtd() {
+        return qtd;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 }

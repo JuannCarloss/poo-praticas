@@ -19,14 +19,14 @@ public class StoreMain2 {
 
         Product2 produto = new Product2(nome, preco, qtd);
 
-        System.out.println("Produto: " + produto.nome + ", $" + produto.preco + ", unidades: "+ produto.qtd +", total: " + "$" + produto.valorTotal());
+        System.out.println("Produto: " + produto.getNome() + ", $" + produto.getPreco() + ", unidades: "+ produto.getQtd() +", total: " + "$" + produto.valorTotal());
 
         System.out.println("quantidade para ser adicionada: ");
         produto.addProdutos(scan.nextInt());
-        System.out.println("Produto Atualizado: " + produto.nome + ", $" + produto.preco + ", unidades: " + produto.qtd + ", total: " + "$" + produto.valorTotal());
+        System.out.println("Produto Atualizado: " + produto.getNome() + ", $" + produto.getPreco() + ", unidades: " + produto.getQtd() + ", total: " + "$" + produto.valorTotal());
 
         System.out.println("Digite a quantidade que vai ser removida: ");
         produto.removerProduto(scan.nextInt());
-        System.out.println("Produto Atualizado: " + produto.nome + ", $" + produto.preco + ", unidades: " + produto.qtd + ", total: " + "$" + produto.valorTotal());
+        System.out.println("Produto Atualizado: " + produto.getNome() + ", $" + produto.getPreco() + ", unidades: " + produto.getQtd() + ", total: " + "$" + produto.valorTotal());
     }
 }
