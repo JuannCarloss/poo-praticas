@@ -27,12 +27,12 @@ public class User {
         this.accountName = accountName;
     }
 
-    public Double depositValue(Double value){
-        return this.accountBalance += value;
+    public void depositValue(Double value){
+        accountBalance += value;
     }
 
-    public Double withdrawValue(Double value){
-        return this.accountBalance = this.accountBalance - value - 5;
+    public void withdrawValue(Double value){
+        accountBalance -= value + 5;
     }
 
     @Override
